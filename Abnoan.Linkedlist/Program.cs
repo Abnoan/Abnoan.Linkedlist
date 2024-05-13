@@ -1,4 +1,5 @@
 ﻿
+using Abnoan.Linkedlist.Exemplos;
 using Abnoan.Linkedlist.Exercicios;
 
 internal class Program
@@ -74,6 +75,26 @@ internal class Program
         {
             Console.WriteLine(dia);
         }
+        #endregion
+
+        #region Exemplos Single Node e Double Node
+
+        // Testando a lista simplesmente encadeada
+        SinglyLinkedList singlyList = new SinglyLinkedList();
+        singlyList.InsertAtEnd(1);
+        singlyList.InsertAtEnd(2);
+        singlyList.InsertAtEnd(3);
+        Console.WriteLine("Singly Linked List:");
+        singlyList.PrintAllNodes();
+
+        // Testando a lista duplamente encadeada
+        DoublyLinkedList doublyList = new DoublyLinkedList();
+        doublyList.InsertAtEnd(1);
+        doublyList.InsertAtEnd(2);
+        doublyList.InsertAtEnd(3);
+        Console.WriteLine("Doubly Linked List:");
+        doublyList.PrintAllNodes();
+
         #endregion
 
         #region Exercicios
